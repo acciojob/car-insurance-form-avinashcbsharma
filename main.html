@@ -3,11 +3,46 @@
 <html>
 
 <head>
+	
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+	<form method="post">
+        <label for="name">Name * </label>
+        <input id="name" name="" type="text" placeholder="Name" required><br>
+       
+        <label for="email">Emaile * </label>
+        <input id="email" name="email" type="text" placeholder="Email" required><br>
+
+        <label>Gender</label>
+        <label class="scar" for="gender">Male</label>
+        <input name="gender" type="radio" required>
+        <label class="scar" for="gender">Female</label>
+        <input name="gender" type="radio" required><br>
+
+        <label for="carage">Car Age</label>
+        <input id="age" type="number" placeholder="carage" required><br><br>        
+        
+        <label for="multiSelect">Car Brands</label>
+        <select id="cars" name="cars">
+            <option>BMW</option>
+            <option>Audi</option>
+            <option>Mercedez</option>
+            <option>Pomeranian</option>
+        </select><br><br>
+
+        <label for="dop">Date of Purchase</label>
+        <input id="dop" type="date" placeholder="dd/mm/yyy" required><br><br>
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" required><br>
+
+        <br><button name="Submit" type="submit">Submit </button>
+    </form>
     <script type="text/javascript" src="./script.js">
 </script>
 
