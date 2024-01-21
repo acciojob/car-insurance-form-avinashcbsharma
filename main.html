@@ -13,33 +13,31 @@
 <body>
 	<form method="post">
         <label for="name">Name * </label>
-        <input id="name" name="" type="text" placeholder="Name" required><br>
+        <input id="name" type="text" placeholder="Name" required><br>
        
         <label for="email">Emaile * </label>
-        <input id="email" name="email" type="text" placeholder="Email" required><br>
+        <input id="email" name="email" type="Email" placeholder="Email" required><br>
 
-        <label>Gender</label>
-        <label class="scar" for="gender">Male</label>
-        <input name="gender" type="radio" required>
-        <label class="scar" for="gender">Female</label>
-        <input name="gender" type="radio" required><br>
+        <label for="gender">Gender</label>
+       <input type="radio" name="gender" value="male"> Male
+	   <input type="radio" name="gender" value="female"> Female
+		<br>
 
-        <label for="carage">Car Age</label>
-        <input id="age" name="carage" type="number" placeholder="carage" required><br><br>        
-        
         <label for="cars">Car Brands</label>
-        <select id="cars" name="cars">
+        <select id="cars" >
             <option>BMW</option>
             <option>Audi</option>
-            <option>Mercedez</option>
-            <option>Pomeranian</option>
+            <option>Mercedez</option>          
         </select><br><br>
 
-        <label for="carage">Date of Purchase</label>
-        <input id="dop" name="carage" type="date" placeholder="dd/mm/yyy" required><br><br>
+        <label for="carage">Car Age</label>
+        <input id="carage" type="number" required><br><br>
+
+		<label for="dop">Date of Purchase</label>
+		<input id="dop" type="date" required><br>
 
         <label for="password">Password</label>
-        <input id="password" name="password" type="password" required><br>
+        <input id="password" type="password" required><br>
 
         <br><button name="Submit" type="submit">Submit </button>
     </form>
